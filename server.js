@@ -11,8 +11,8 @@ const PUBLIC_DIR = path.join(__dirname, 'public'); // Define public directory pa
 // --- Initial Data State (In-Memory) ---
 // NOTE: This data is lost if the server restarts. Consider a database for persistence.
 let currentData = {
-    amount: "50,000", // Ensure these match initial values in public/GLOBALPAY.html
-    name: "Hexyo Xmax"
+    amount: "LOADING...", // Ensure these match initial values in public/GLOBALPAY.html
+    name: "LOADING..."
 };
 
 // --- Application Setup ---

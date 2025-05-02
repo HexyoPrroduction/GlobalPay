@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ws.onclose = (event) => {
             console.log(`WebSocket connection closed: ${event.code} ${event.reason}. Reconnecting in 5 seconds...`);
             // Simple reconnection logic
-            setTimeout(connectWebSocket, 0);
+            setTimeout(connectWebSocket, 5000);
         };
     }
 
