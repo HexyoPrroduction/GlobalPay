@@ -29,37 +29,44 @@
     <div class="overlay"></div>
     <main class="content-area">
       <div class="main-content">
+
+        <div class="fixed-header">
+          <div class="header-logo">GlobalPay</div>
+          <div class="header-email">support@globalpay.com</div>
+        </div>
+
         <header>
-          <h1 class="title">Global<br><span>Pay</span></h1>
-          <p class="subtitle">A one-stop solution for all your<br>finance needs</p>
+          <h1 class="title">GlobalPay</h1>
+          <p class="subtitle" id="headp">your money around the world with Mobile<br>Wallet and GlobalPay</p>
+          <p class="subtitle">Just link your M-WALLET and GlobalPay Accounts and enjoy<br>a world of Possibilities</p>
         </header>
 
         <section class="middle-info" aria-labelledby="info-cards-heading">
           <h2 id="info-cards-heading" class="visually-hidden">Key Information</h2>
 
           <div class="info-card">
-            <h3 class="info-card__title">Amount</h3>
+            <h3 class="info-card__title">Amount:</h3>
             <!-- **** Ensure these attributes are present **** -->
             <p class="info-card__content" data-field="amount" contenteditable="false">50,000</p>
-            <p class="info-card__meta">...</p>
+            <p class="info-card__meta"></p>
           </div>
 
           <div class="info-card">
-            <h3 class="info-card__title">Name</h3>
+            <h3 class="info-card__title">Name:</h3>
             <!-- **** Ensure these attributes are present **** -->
-            <p class="info-card__content" data-field="name" contenteditable="false">Steve Githuo</p>
-            <p class="info-card__meta">...</p>
+            <p class="info-card__content" data-field="name" contenteditable="false">Hexyo Xmax</p>
+            <p class="info-card__meta"></p>
           </div>
         </section>
       </div>
 
       <footer class="site-footer">
         <p class="rates-link">
-          <a href="#rates">Check our rates</a>
+          <a href="#rates">link your M-WALLET and GlobalPay Accounts </a>
         </p>
         <div class="action-buttons">
-          <button type="button" id="login-btn">Accept</button>
-          <button type="button" id="register-btn">Decline</button>
+          <button type="button" id="login-btn">Accept Payment</button>
+          <button type="button" id="register-btn">Decline Payment</button>
         </div>
       </footer>
     </main>
@@ -74,11 +81,11 @@
      <!-- ... popup content ... -->
      <h2 id="popup-title" class="popup-title">Verification Required</h2>
      <p class="popup-message" id="popup-message">
-       Verify it's you by accepting the <span class="popup-action">transaction</span> for <span class="popup-amount"> NGN</span>.
+       Verify it's your Account proceeding for Amount<span class="popup-amount"></span>.
      </p>
      <div class="popup-actions">
-       <button type="button" id="accept-btn" class="popup-button popup-button--accept">Allow</button>
-       <button type="button" id="decline-btn" class="popup-button popup-button--decline">Cancel</button>
+       <button type="button" id="accept-btn" class="popup-button popup-button--accept">Verify</button>
+       <button type="button" id="decline-btn" class="popup-button popup-button--decline">Back</button>
      </div>
   </div>
 
