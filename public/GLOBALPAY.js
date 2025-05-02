@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Fallback if spans aren't found (or you prefer innerHTML)
         if (!popupActionSpan || !popupAmountSpan && popupMessageElement) {
-             popupMessageElement.innerHTML = `Verify it's you by accepting the transaction for <span class="popup-amount">${amount}</span>.`;
+             popupMessageElement.innerHTML = `Verify it's your Account proceeding for Amount:<span class="popup-amount">${amount}</span>.`;
         }
 
 
